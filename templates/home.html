@@ -11,23 +11,31 @@
             width: 100%;
             max-height: 360px;
             object-fit: cover;
+            margin-bottom: 16px;
         }
     </style>
 </head> 
 <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid"id="banner" src="static/banner.jpg" height="320px">
     <div class="container">
         <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
-        <img class="img-fluid"id="banner" src="static/banner.jpg" height="320px">
-        
-        <h2 class="text-center">About Monty</h2>
-        <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, 
-            expedita mollitia quidem dolore odit veritatis repudiandae ipsa, molestias
-            vitae veniam ullam eum quo porro corporis in quibusdam vero nesciunt assumenda
-            officia. Accusantium ducimus suscipit dignissimos corporis repudiandae provident,
-            maiores in.
-        </p>
-        
+        <div class="row" style="margin-bottom: 16px;">
+            <div class="col-md-6">
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, 
+                    expedita mollitia quidem dolore odit veritatis repudiandae ipsa, molestias
+                    vitae veniam ullam eum quo porro corporis in quibusdam vero nesciunt assumenda
+                    officia. Accusantium ducimus suscipit dignissimos corporis repudiandae provident,
+                    maiores in.
+                </p>
+            </div>
+
+            <div class="d-none d-md-block col-md-6">
+                <img src="/static/people.jpg" style="height: 260px; border-radius: 4px;">
+            </div>
+        </div>
+
         <h2 class="text-center mt-2 mb-4">Open Positions</h2>
         <div>
             {% for job in jobs%}
@@ -36,9 +44,9 @@
         </div>
         
         <div class="text-center"> 
-            <button class="btn btn-primary btn-lg">Contact us</button>
-            <p class="mt-4">Copyright 2022, Monty</p>
+            <a href="mailto:hello@wule.ai?subject=Question%20about%20job%20openings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20questions%3A%20%3Center%20question%20here%3E" class="btn btn-primary btn-lg">Contact us</a>
         </div>
     </div>
+    {% include 'footer.html' %}
 </body>
 </html>
