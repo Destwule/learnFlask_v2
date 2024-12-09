@@ -28,59 +28,37 @@ session = Session()
     
 
 
-title = 'Frontend developer'
-location = 'Remote'
+title = 'Backend developer'
+location = 'San Francisco, USA'
 salary = 120000
-currency = 'Rs'
+currency = '$'
 responsibilities = """
-Design and Implementation:
-Translate design concepts into functional and visually appealing interfaces
-Write clean, modular, and reusable JavaScript code
-Implement responsive web design and mobile-first development
-Ensure cross-browser compatibility and accessibility
-Code Maintenance and Refactoring:
-Maintain and refactor existing frontend codebases
-Optimize code for performance and scalability
-Ensure code adheres to company coding standards and best practices
-Testing and Quality Assurance:
-Write unit tests and UI tests for frontend components
-Ensure code meets testing and debugging standards
-Collaborate with QA team to identify and fix bugs
-Deployment and Release Management:
-Deploy frontend code to production environments
-Manage frontend build processes and configuration files
-Collaborate with backend developers and DevOps team for seamless deployment
-Staying Up-to-Date with Industry Trends:
-Participate in ongoing education and training to stay current with frontend development trends and technologies
-Share knowledge and best practices with team members
-Contribute to open-source projects or participate in online communities to stay engaged with the frontend development ecosystem
+As a backend developer, primary responsibilities include:
+Designing, building, and maintaining the server-side of web applications.
+Writing code that forms the backbone of a website or app.
+Collaborating with front-end developers, product managers, principal architects, and website testers to build the structure of a website or mobile app.
+Ensuring the back-end performs quickly and responsively to front-end user requests.
+Troubleshooting and debugging issues, and communicating with project managers, stakeholders, and QA teams.
 """
 requirements = """
-Technical Skills:
-Proficiency in HTML5, CSS3, and JavaScript (ES6+)
-Familiarity with front-end build tools such as Webpack, Gulp, or Rollup
-Knowledge of responsive web design and mobile-first development
-Understanding of CSS preprocessors like Sass or Less
-Experience with JavaScript libraries and frameworks like React, Angular, or Vue.js
-Familiarity with state management libraries like Redux or MobX
-Basic understanding of web performance optimization techniques
-Design and UI/UX:
-Understanding of design principles and human-computer interaction
-Familiarity with design tools like Sketch, Figma, or Adobe XD
-Ability to create visually appealing and user-friendly interfaces
-Knowledge of accessibility guidelines (WCAG 2.1) and implementation
-Version Control:
-Proficiency with Git and GitHub (or other version control systems)
-Ability to manage codebase, branches, and merges
-Understanding of Git workflows and collaboration
-Testing and Debugging:
-Familiarity with unit testing frameworks like Jest or Mocha
-Understanding of UI testing and integration testing
-Ability to debug code using browser dev tools and console logs
-Communication and Collaboration:
-Strong written and verbal communication skills
-Ability to work collaboratively with designers, backend developers, and product managers
-Understanding of agile development methodologies and Scrum principles
+project managers, stakeholders, and QA teams.
+Technical Skills
+Familiarity with various tools, frameworks, and languages, such as Python, Java, Ruby, and others.
+Understanding of cross-platform functionality and compatibility.
+Ability to write high-quality, clean, and maintainable code.
+Knowledge of database systems and data storage solutions.
+Experience with SASS and Less, and understanding of accessibility and server compliance.
+Solid OOP and software design knowledge.
+Soft Skills
+Excellent collaboration and communication skills.
+Analytical thinking and problem-solving abilities.
+Ability to work with teams to prove design methods are viable.
+Technical expertise and attention to detail.
+Diversity and Inclusion
+Employers should strive to create a diverse and inclusive workplace by:
+Providing benefits offerings that support a diverse candidate pool, such as family leave, flexible schedules, and tuition reimbursement.
+Communicating a commitment to diversity and inclusion through company culture and values.
+Ensuring job descriptions and requirements are free from unintended biases.
 """
 
 def add_employee(title, location, salary, currency, responsibilities, requirements):
@@ -98,4 +76,4 @@ def load_jobs_from_db():
 	return jobs
 
 # if __name__ == "__main__":
-    #   add_employee(title, location, salary, currency, responsibilities, requirements)
+#       add_employee(title, location, salary, currency, responsibilities, requirements)
