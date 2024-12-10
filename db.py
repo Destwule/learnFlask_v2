@@ -75,5 +75,12 @@ def load_jobs_from_db():
 		jobs.append(employee.__dict__)
 	return jobs
 
+
+def load_job_from_db(id):
+    result = session.query(Job).filter_by(id=id).all()
+    if result:
+        return result[0].__dict__
+    return None
+
 # if __name__ == "__main__":
 #       add_employee(title, location, salary, currency, responsibilities, requirements)
