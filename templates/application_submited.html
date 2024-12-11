@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% include 'bootstrap.html' %}
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
+        <p>Your Application for the role of {{job['title']}} as Monty has been submitted</p>
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
+    <b>Full Name</b>
+    <div class="mb-4">{{application['full_name']}}</div>
+
+    <b>Email</b>
+    <div class="mb-4">{{application['Email']}}</div>
+
+    <b>Linkedin_url</b>
+    <div class="mb-4">{{application['Linkedin_url']}}</div>
+
+    <b>Work Experience</b>
+    <div class="mb-4">{{application['work_experience']}}</div>
+
+    <b>Resume URL</b>
+    <div class="mb-4">{{application['resume_url']}}</div>
+
+    {% include 'footer.html' %}
+</div>
+</body>
+</html>
